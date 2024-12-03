@@ -2,228 +2,311 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio Alisandro</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alisandro</title>
 
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap" rel="stylesheet" />
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Alisandro</a>
+    <header class="header">
+        <a href="index.html" class="logo">Alisandro</a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Inicio</a>
-      <a href="#about">Acerca de</a>
-      <a href="#services">Servicios</a>
-      <a href="#portfolio">Portafolio</a>
-      <a href="#contact">Contactame</a>
-    </nav>
-  </header>
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hola, soy <span>Alisandro Quispe</span></h1>
-      <h3>Un Desarrollador Web</h3>
-      <p>
-        Soy un desarrollador web enfocado en el backend. Tengo experiencia trabajando con HTML, CSS, JavaScript y
-        Node.js,
-        y me apasiona crear aplicaciones web funcionales y eficientes. Siempre estoy buscando mejorar mis habilidades y
-        enfrentar nuevos desafíos en el mundo del desarrollo web.
-      </p>
-      <div class="social-media">
-        <a href=""><i class='bx bxl-linkedin'></i></a>
-        <a href=""><i class='bx bxl-github'></i></a>
-        <a href=""><i class='bx bxl-facebook'></i></a>
-        <a href=""><i class='bx bxl-instagram'></i></a>
-      </div>
-      <div class="container">
-        <a href="resource/my-porfolio.pdf" class="btn" download="">Descargar CV</a>
-        <a href="http://wa.me/+59169729877" target="_blank" class="btn-wts">
-          <i class='bx bxl-whatsapp'></i>
-          <p>Contactame</p>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="about-content">
-      <div class="about-me">
-        <h2 class="heading">Acerca de <span class="mi">Mí</span></h2>
-        <h3>Ing. de Sistemas</h3>
-        <p>Me especializo en desarrollo backend utilizando JavaScript, Node.js, HTML, CSS,
-          y bases de datos como PostgreSQL y MongoDB. Diseño servidores escalables que
-          manejan múltiples solicitudes y exponen APIs para la integración de servicios.
-          Mi enfoque está en crear soluciones rápidas y seguras, optimizando el rendimiento
-          del sistema y mejorando la experiencia del usuario. Gracias a mi conocimiento en HTML
-          y CSS, puedo colaborar eficazmente con el equipo frontend para garantizar una integración
-          fluida entre el cliente y el servidor.</p>
-      </div>
-      <div class="skills">
-        <h3>Habilidades</h3>
-        <siv class="content-skills">
-          <div class="item-skill">
-            <span>HTML</span>
-            <i class='bx bxl-html5'></i>
-          </div>
-          <div class="item-skill">
-            <span>CSS</span>
-            <i class='bx bxl-css3'></i>
-          </div>
-          <div class="item-skill">
-            <span>JavaScript</span>
-            <i class='bx bxl-javascript'></i>
-          </div>
-          <div class="item-skill">
-            <span>NodeJS</span>
-            <i class='bx bxl-nodejs'></i>
-          </div>
-          <div class="item-skill">
-            <span>PostgreSQL</span>
-            <i class='bx bxl-postgresql'></i>
-          </div>
-          <div class="item-skill">
-            <span>MongoDB</span>
-            <i class='bx bxl-mongodb'></i>
-          </div>
-          <div class="item-skill">
-            <span>Git</span>
-            <i class='bx bxl-git'></i>
-          </div>
-          <div class="item-skill">
-            <span>GitHub</span>
-            <i class='bx bxl-github'></i>
-          </div>
-        </siv>
-      </div>
-    </div>
-    <div class="about-img">
-      <img src="images/photo-profile.png" alt="Foto Alisandro">
-    </div>
-  </section>
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#services">Servicios</a>
+            <a href="#portfolio">Portafolio</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
 
-  <section class="services" id="services">
-    <h2 class="heading">Mis <span>Servicios</span></h2>
-    <p class="heading-description">Como desarrollador backend especializado en JavaScript, Node.js, Express, 
-      PostgreSQL y MongoDB, ofrezco soluciones personalizadas para optimizar el rendimiento, la escalabilidad 
-      y la seguridad de tus aplicaciones. Mis servicios incluyen el diseño y desarrollo de APIs eficientes, 
-      integración de bases de datos tanto SQL como NoSQL, y la implementación de arquitecturas robustas que 
-      garantizan un rendimiento óptimo. Mi objetivo es proporcionar sistemas backend sólidos y escalables, 
-      adaptados a las necesidades específicas de cada proyecto, asegurando una experiencia de usuario rápida 
-      y confiable.</p>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hola, soy <span>Alisandro</span></h1>
+            <h3>Un ingeniero de sistemas</h3>
+            <p>
+                Bienvenido a mi página web. En este espacio, podrás explorar mis
+                proyectos, habilidades y experiencia en el campo del desarrollo web.
+                Me especializo en el uso de tecnologías como HTML, CSS, JavaScript,
+                React y Node.js para diseñar y construir soluciones web innovadoras,
+                robustas y de alto rendimiento, enfocadas en la eficiencia y la
+                excelencia.
+            </p>
 
-      <div class="services-content">
-        <div class="service-item">
-          <i class='bx bx-code-alt'></i>
-          <h3>Desarrollador Web</h3>
-          <p>Construyo sitios web responsivos y eficientes, aplicando las últimas tecnologías y mejores prácticas 
-            en desarrollo frontend y backend para ofrecer soluciones web de alto rendimiento y calidad.</p>
-          <a href="" class="btn-now">Contacta ahora <i class='bx bxs-chevrons-right'></i></a>
-        </div>
-        <div class="service-item">
-          <i class='bx bxs-data' ></i>
-          <h3>Administracion de base de datos</h3>
-          <p>Diseño, implementación, optimización y mantenimiento de bases de datos (SQL, NoSQL, etc.), asegurando 
-            la integridad, seguridad y alta disponibilidad de los datos.
-          </p>
-          <a href="" class="btn-now">Contacta ahora <i class='bx bxs-chevrons-right'></i></a>
-        </div>
-        <div class="service-item">
-          <i class='bx bx-cog'></i>
-          <h3>Soporte Técnico y Mantenimiento de Equipos</h3>
-          <p>Brindar soporte técnico básico, instalación y configuración de software, mantenimiento de sistemas 
-            operativos, y resolución de problemas en redes o dispositivos informáticos.</p>
-          <a href="" class="btn-now">Contacta ahora <i class='bx bxs-chevrons-right'></i></a>
-        </div>
-      </div>
-  </section>
+            <div class="social-media">
+                <a href=""><i class="bx bxl-linkedin"></i></a>
+                <a href=""><i class="bx bxl-github"></i></a>
+                <a href=""><i class="bx bxl-facebook"></i></a>
+                <a href=""><i class="bx bxl-instagram"></i></a>
+            </div>
 
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Mi <span>Portafolio</span></h2>
-    <p class="heading-description">
-      En este portafolio presento una selección de mis proyectos backend, donde destaco mi habilidad para 
-      desarrollar soluciones escalables, eficientes y seguras. Con experiencia en Node.js, Express.js, 
-      MongoDB, MySQL y PostgreSQL, me especializo en crear APIs RESTful, gestionar bases de datos y asegurar 
-      un rendimiento óptimo en el servidor. Explora mis proyectos para conocer cómo puedo ayudarte a construir 
-      una infraestructura backend robusta y confiable.
-    </p>
-    <div class="portfolio-content">
-      <div class="portfolio-item">
-        <div class="portfolio-header">
-          <h4>Titulo del proyecto</h4>
-          <a href="">
-            <i class='bx bx-qr-scan'></i>
-          </a>
+            <a href="resource/my-porfolio.pdf" class="btn" download>Descargar CV</a>
+            <a href="https://wa.me/+59169729877" target="_blank" class="btn-ws">
+                <i class="bx bxl-whatsapp"></i>
+                <p>Contactame</p>
+            </a>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          </p>
-          <img src="images/portfolio1.png" alt="Imagen de portafolio">
-      </div>
-      <div class="portfolio-item">
-        <div class="portfolio-header">
-          <h4>Titulo del proyecto</h4>
-          <a href="">
-            <i class='bx bx-qr-scan'></i>
-          </a>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-me">
+                <h2 class="heading">Acerca de <span>Mí</span></h2>
+                <h3>Soy un <span>Ing. de Sistemas</span></h3>
+                <p>
+                    Con una sólida formación en tecnología, me especializo en la
+                    creación de experiencias web intuitivas y funcionales. A lo largo de
+                    mi carrera, he desarrollado un dominio profundo de HTML, CSS,
+                    JavaScript y frameworks modernos como React. Mi enfoque se centra en
+                    mejorar la usabilidad y accesibilidad de las aplicaciones web,
+                    asegurando que cada proyecto sea eficiente, escalable y fácil de
+                    usar. Disfruto colaborar con equipos multidisciplinarios y enfrentar
+                    desafíos técnicos que me permitan seguir creciendo profesionalmente
+                    y mantenerme a la vanguardia de las últimas tecnologías.
+                </p>
+            </div>
+            <div class="skills">
+                <h3>Habilidades</h3>
+                <siv class="content-skills">
+                    <div class="item-skill">
+                        <span>HTML</span>
+                        <i class="bx bxl-html5"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>CSS</span>
+                        <i class="bx bxl-css3"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>JavaScript</span>
+                        <i class="bx bxl-javascript"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>NodeJS</span>
+                        <i class="bx bxl-nodejs"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>PostgreSQL</span>
+                        <i class="bx bxl-postgresql"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>MongoDB</span>
+                        <i class="bx bxl-mongodb"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>Git</span>
+                        <i class="bx bxl-git"></i>
+                    </div>
+                    <div class="item-skill">
+                        <span>GitHub</span>
+                        <i class="bx bxl-github"></i>
+                    </div>
+                </siv>
+            </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          </p>
-          <img src="images/portfolio2.png" alt="Imagen de portafolio">
-      </div>
-      <div class="portfolio-item">
-        <div class="portfolio-header">
-          <h4>Titulo del proyecto</h4>
-          <a href="">
-            <i class='bx bx-qr-scan'></i>
-          </a>
+        <div class="about-img">
+            <img src="images/photo-profile.png" alt="Foto Alisandro" />
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          </p>
-          <img src="images/portfolio1.png" alt="Imagen de portafolio">
-      </div>
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <h2 class="heading">Contacta <span>Me</span></h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut ipsum inventore asperiores eos 
-      atque fugit et corrupti, rerum dolor optio. Omnis ipsum sint animi eos, reprehenderit nihil libero ipsam.
-    </p>
-    <div class="contact-content">
-      <form action="">
-        <input type="text" placeholder="Nombre Completo">
-        <input type="email" name="" id="" placeholder="Correo Electronico">
-        <input type="number" name="" id="" placeholder="Número de telefono">
-        <input type="text" placeholder="Asunto">
-        <textarea placeholder="Ingrese su mensaje"></textarea>
-        <div class="btn-submit">
-          <input type="submit" value="Enviar Mensaje" class="btn">
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>Servicios</span></h2>
+        <p class="heading-description">
+            Como desarrollador fullstack especializado en JavaScript, Node.js,
+            Express, React, PostgreSQL y MongoDB, ofrezco soluciones personalizadas
+            para optimizar el rendimiento, la escalabilidad y la seguridad de tus
+            aplicaciones. Mis servicios incluyen el diseño y desarrollo de APIs
+            eficientes, integración de bases de datos tanto SQL como NoSQL, y la
+            implementación de arquitecturas robustas que garantizan un rendimiento
+            óptimo. Mi objetivo es proporcionar sistemas backend sólidos y
+            escalables, adaptados a las necesidades específicas de cada proyecto,
+            asegurando una experiencia de usuario rápida y confiable.
+        </p>
+
+        <div class="services-content">
+            <div class="service-item">
+                <i class="bx bx-code-alt"></i>
+                <h3>Desarrollador Web</h3>
+                <p>
+                    Construyo sitios web responsivos y eficientes, aplicando las últimas
+                    tecnologías y mejores prácticas en desarrollo frontend y backend
+                    para ofrecer soluciones web de alto rendimiento y calidad.
+                </p>
+                <a href="" class="btn-now">Contacta ahora <i class="bx bxs-chevrons-right"></i></a>
+            </div>
+            <div class="service-item">
+                <i class="bx bxs-data"></i>
+                <h3>Administracion de base de datos</h3>
+                <p>
+                    Diseño, implementación, optimización y mantenimiento de bases de
+                    datos (SQL, NoSQL, etc.), asegurando la integridad, seguridad y alta
+                    disponibilidad de los datos.
+                </p>
+                <a href="" class="btn-now">Contacta ahora <i class="bx bxs-chevrons-right"></i></a>
+            </div>
+            <div class="service-item">
+                <i class="bx bx-cog"></i>
+                <h3>Soporte Técnico y Mantenimiento de Equipos</h3>
+                <p>
+                    Brindar soporte técnico básico, instalación y configuración de
+                    software, mantenimiento de sistemas operativos, y resolución de
+                    problemas en redes o dispositivos informáticos.
+                </p>
+                <a href="" class="btn-now">Contacta ahora <i class="bx bxs-chevrons-right"></i></a>
+            </div>
         </div>
-      </form>
-      <div class="img-contact">
-        <img src="images/img-contact.svg" alt="Imagen de contacto">
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="social-media">
-        <a href=""><i class='bx bxl-linkedin'></i></a>
-        <a href=""><i class='bx bxl-github'></i></a>
-        <a href=""><i class='bx bxl-facebook'></i></a>
-        <a href=""><i class='bx bxl-instagram'></i></a>
-      </div>
-      <div class="arrow">
-        <a href="#home"><i class='bx bxs-chevrons-up'></i></a>
-      </div>
-    </div>
-    <p class="copyright"> 
-      &copy; Alisandro Quispe Chavez - Casi todos los derechos reservados.
-    </p>
-  </footer>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Mi <span>Portafolio</span></h2>
+        <p class="heading-description">
+            En este portafolio presento una selección de mis proyectos backend, donde destaco mi habilidad para
+            desarrollar soluciones escalables, eficientes y seguras. Con experiencia en Node.js, Express.js,
+            MongoDB, MySQL y PostgreSQL, me especializo en crear APIs RESTful, gestionar bases de datos y asegurar
+            un rendimiento óptimo en el servidor. Explora mis proyectos para conocer cómo puedo ayudarte a construir
+            una infraestructura backend robusta y confiable.
+        </p>
+
+        <div class="portfolio-content">
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <h4>Titulo del proyecto</h4>
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    nulla molestiae dolor eveniet!
+                </p>
+
+                <img src="images/portfolio1.png" alt="Imagen de Portafolio" />
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <h4>Titulo del proyecto</h4>
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    nulla molestiae dolor eveniet!
+                </p>
+
+                <img src="images/portfolio2.png" alt="Imagen de Portafolio" />
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <h4>Titulo del proyecto</h4>
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    nulla molestiae dolor eveniet!
+                </p>
+
+                <img src="images/portfolio1.png" alt="Imagen de Portafolio" />
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <h4>Titulo del proyecto</h4>
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    nulla molestiae dolor eveniet!
+                </p>
+
+                <img src="images/portfolio1.png" alt="Imagen de Portafolio" />
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <h4>Titulo del proyecto</h4>
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    nulla molestiae dolor eveniet!
+                </p>
+
+                <img src="images/portfolio2.png" alt="Imagen de Portafolio" />
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <h4>Titulo del proyecto</h4>
+                    <a href="">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                    nulla molestiae dolor eveniet!
+                </p>
+
+                <img src="images/portfolio2.png" alt="Imagen de Portafolio" />
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacta <span>Me</span></h2>
+        <p>
+            Si tienes alguna pregunta o estás interesado en contratar mis servicios para tu próximo proyecto,
+            estaré encantado de saber de ti. Estoy siempre dispuesto a asumir nuevos desafíos y aportar soluciones 
+            tecnológicas de alta calidad.
+            Puedes enviarme un mensaje a través del siguiente formulario, y me aseguraré de responder a la brevedad posible.
+        </p>
+
+        <div class="contact-content">
+            <form action="">
+                <input type="text" placeholder="Nombre Completo" />
+                <input type="email" name="" id="" placeholder="Correo Electronico" />
+                <input type="number" name="" id="" placeholder="Número de telefono" />
+                <input type="text" placeholder="Asusto" />
+                <textarea name="" id="" placeholder="Ingrese su mensaje"></textarea>
+
+                <div class="btn-submit">
+                    <input type="submit" value="Enviar Mensaje" class="btn" />
+                </div>
+            </form>
+
+            <div class="img-contact">
+                <img src="images/img-contact.svg" alt="Imagen de contacto" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href=""><i class="bx bxl-linkedin"></i></a>
+                <a href=""><i class="bx bxl-github"></i></a>
+                <a href=""><i class="bx bxl-facebook"></i></a>
+                <a href=""><i class="bx bxl-instagram"></i></a>
+            </div>
+
+            <div class="arrow">
+                <a href="#home"><i class="bx bx-chevrons-up"></i></a>
+            </div>
+        </div>
+        <p class="copyright">
+            &copy; Alisandro Quispe Chavez - Casi todos los derechos reservados.
+        </p>
+    </footer>
 </body>
 
 </html>
