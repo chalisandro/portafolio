@@ -5,14 +5,19 @@
     text-decoration: none;
     border: none;
 }
-
-:root{
-    --bg-color: #f7f7f7;
-    --second-bg-color: #eaeaea;
-    --text-color: #3f3844;
-    --main-color: #ff5733;
-    --other-color: #5d6c83;
+:root {
+    --bg-color: #2c3e50; /* Gris oscuro carbón */
+    --second-bg-color: #34495e; /* Gris medio */
+    --text-color: #ecf0f1; /* Blanco suave para el texto */
+    --main-color: #c0392b; /* Rojo sangre intenso */
+    --other-color: #7f8c8d; /* Gris oscuro */
 }
+
+
+
+
+
+
 
 html{
     font-size: 62.5%; /*1rem -> 10px*/
@@ -158,7 +163,7 @@ span{
     width: 60%;
     margin-left: 5rem;
     padding: 6rem 2rem;
-    background-color: rgb(247, 247, 247,0.9);
+    background-color: #435d77;
     border: .2rem solid var(--main-color);
     border-radius: 2rem;
 }
@@ -612,7 +617,7 @@ form textarea{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     border-bottom: 0.25rem solid var(--main-color);
     border-radius: 0.8rem 0.8rem 0 0;
     margin: 0.7rem 0;
